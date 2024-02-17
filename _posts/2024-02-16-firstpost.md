@@ -2,7 +2,7 @@
 layout: post
 title: 첫번째 게시물
 subtitle: A awesome static site generator.
-author: 황수현
+author: 빵뚜
 categories: 입문용
 # date: 2024-02-16 HH:MM:SS +09:00
 banner:
