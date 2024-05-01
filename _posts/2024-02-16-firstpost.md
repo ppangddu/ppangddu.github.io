@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 첫번째 게시물
+title: 빵 뚜
 subtitle: A awesome static site generator.
-author: 빵뚜
+author: 빵 뚜
 categories: 입문용
 # date: 2024-02-16 HH:MM:SS +09:00
 banner:
@@ -26,5 +26,6 @@ sidebar: []
 <p align="center">
   <img src="https://github.com/ppangddu/ppangddu.github.io/assets/157614269/0ed631e9-fa29-41bb-b722-f4973a359cfb">
 </p>
-<p align="center"><a href="https://gwagh951.tistory.com">🤍gwagh951.tistory.com🤍</a></p>
+Real Choco <mark style='background-color: #f6f8fa'>JAVA</mark> Chip Frappe DAISUKI
+"https://gwagh951.tistory.com"
 
