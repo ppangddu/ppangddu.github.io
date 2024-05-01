@@ -5,7 +5,7 @@ subtitle:
 categories: markdown
 tags: [final 변수]
 ---
-# final 변수와 상수  
+# final 변수와 상수 
 <br>
 final 키워드는 이름 그대로 끝!이라는 뜻이다.
 
@@ -87,4 +87,4 @@ FieldInit과 같이 final 필드를 필드에서 초기화 하는 경우, 모든
 - static final FieldInit.MY_VALUE는 static 영역에 존재한다. 그리고 final 키워드를 사용해서 초기화 값이 변하지 않는다. 
 - static 영역은 단 하나만 존재하는 영역이다. MY_VALUE 변수는 JVM 상에서 하나만 존재하므로 앞서 설명한 중복과 메모리 비효율 문제를 모두 해결할 수 있다.
 
-이런 이유로 필드에 final + 필드 초기화를 사용하는 경우 static을 붙여서 사용하는 것이 효과적이다.
+> 이런 이유로 필드에 final + 필드 초기화를 사용하는 경우 static을 붙여서 사용하는 것이 효과적이다.
