@@ -26,5 +26,5 @@ sidebar: []
 <p align="center">
   <img src="https://github.com/ppangddu/ppangddu.github.io/assets/157614269/0ed631e9-fa29-41bb-b722-f4973a359cfb">
 </p>
-<p align="center"><a href="https://gwagh951.tistory.com">🤍ppangddu🤍</a></p>
+<p align="center"><a href="https://gwagh951.tistory.com">🤍gwagh951.tistory.com🤍</a></p>
 
