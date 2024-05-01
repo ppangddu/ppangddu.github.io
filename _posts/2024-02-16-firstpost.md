@@ -26,6 +26,7 @@ sidebar: []
 <p align="center">
   <img src="https://github.com/ppangddu/ppangddu.github.io/assets/157614269/0ed631e9-fa29-41bb-b722-f4973a359cfb">
 </p>
-Real Choco <mark style='background-color: #f6f8fa'>JAVA</mark> Chip Frappe DAISUKI
+Real Choco <mark style='background-color: #f6f8fa'>JAVA</mark> Chip Frappe DAISUKI  
+
 "https://gwagh951.tistory.com"
 
