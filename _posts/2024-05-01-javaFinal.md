@@ -84,3 +84,55 @@ FieldInit과 같이 final 필드를 필드에서 초기화 하는 경우, 모든
 - static 영역은 단 하나만 존재하는 영역이다. MY_VALUE 변수는 JVM 상에서 하나만 존재하므로 앞서 설명한 중복과 메모리 비효율 문제를 모두 해결할 수 있다.
 
 __이런 이유로 필드에 final + 필드 초기화를 사용하는 경우 static을 붙여서 사용하는 것이 효과적이다.__
+
+상수(Constant)
+상수는 변하지 않고, 항상 일정한 값을 갖는 수를 말한다.
+자바 상수 특징
+- static final 키워드를 사용한다.
+- 대문자를 사용하고 구분은 _(언더스코어)로 한다.
+- 필드를 직접 접근해서 사용한다.
+    - 상수는 값을 변경할 수 없다. 따라서 필드에 직접 접근해서 데이터가 변하는 문제가 발생하지 않는다.
+
+
+``` java
+package final1;
+
+public class Constant {
+    //수학 상수
+    public static final double PI = 3.14;
+    //시간 상수
+    public static final int HOURS_IN_DAY = 24;
+    public static final int MINUTES_IN_HOUR = 60;
+    public static final int SECONDS_IN_MIMUTE = 60;
+    //애플리케이션 설정 상수
+    public static final int MAX_USERS = 2000;
+}
+```
+다른 클래스에서 바로 접근이 가능하다.
+<br>
+
+``` java
+package final1;
+
+public class ConstantMain2 {
+
+    public static void main(String[] args) {
+        System.out.println("프로그램 최대 참여자 수 : " + Constant.MAX_USERS);
+        int currentUserCount = 999;
+        process(currentUserCount++);
+        process(currentUserCount++);
+        process(currentUserCount++);
+    }
+
+    private static void process(int currentUserCount) {
+        System.out.println("참여자 수 : " + currentUserCount);
+        if (currentUserCount > Constant.MAX_USERS) {
+            System.out.println("대기자로 등록합니다.");
+        } else {
+        System.out.println("게임에 참여합니다.");
+        }
+    }
+}
+```
+ - Constant.MAX_USERS 상수를 사용했다. 만약 프로그램 최대 참여자 수를 변경해야 하면 Constant.MAX_USER의 상수값만 변경하면 된다.
+- 매직 넘버 문제를 해결했다. 숫자 1000이 아니라 사람이 인지할 수 있게 MAX_USERS라는 변수명으로 코드를 이해할 수 있다.
