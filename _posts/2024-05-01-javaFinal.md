@@ -137,3 +137,33 @@ public class ConstantMain2 {
 ```
  - Constant.MAX_USERS 상수를 사용했다. 만약 프로그램 최대 참여자 수를 변경해야 하면 Constant.MAX_USER의 상수값만 변경하면 된다.
 - 매직 넘버 문제를 해결했다. 숫자 1000이 아니라 사람이 인지할 수 있게 MAX_USERS라는 변수명으로 코드를 이해할 수 있다.
+
+``` java
+package final1;
+
+public class FinalRefMain {
+    public static void main(String[] args) {
+        final Data data = new Data();
+        //data = new Data(); //final 변경 불가 컴파일 오류
+
+        //참조 대상의 값은 변경 가능
+        data.value = 10;
+        System.out.println(data.value);
+        data.value = 20;
+        System.out.println(data.value);
+    }
+}
+```
+참조형 변수 data에 final이 붙었다. 변수 선언 시점에 참조값을 할당했으므로 더는 참조값을 변경할 수 없다.
+
+``` java
+data.value = 10
+data.value = 20
+```
+그런데 참조 대상의 객체의 값은 변경할 수 있다. 
+- 참조형 변수 data에 final이 붙었다. 이 경우 참조형 변수에 들어있는 참조값을 다른 값으로 변경하지 못한다. 쉽게 이야기해서 이제 다른 객체를 참조할 수 없다. 참조형 변수에 들어있는 참조값만 변경하지 못한다는 뜻이다. 이 변수 이외에 다른 곳에 영향을 주는 것이 아니다.
+- Data.value는 final이 아니다. 따라서 값을 변경할 수 있다.
+
+![image](https://github.com/ppangddu/blog-comments/assets/157614269/238ddfa0-c910-4f91-b0cc-2ff0b84b1663)
+
+정리하면 참조형 변수에 final이 붙으면 참조 대상 자체를 다른 대상으로 변경하지 못하는 것이지, 참조하는 대상의 값은 변경할 수 있다.
